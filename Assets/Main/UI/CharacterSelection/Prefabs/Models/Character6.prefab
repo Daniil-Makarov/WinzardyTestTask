@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 4384860695052205134}
   - component: {fileID: 4384860695062008750}
   m_Layer: 0
-  m_Name: BaseAvatar_Meshed 03
+  m_Name: Character6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

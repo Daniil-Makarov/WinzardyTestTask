@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 421522}
   - component: {fileID: 9571246}
   m_Layer: 0
-  m_Name: CH_Dr.Claire
+  m_Name: Character1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
