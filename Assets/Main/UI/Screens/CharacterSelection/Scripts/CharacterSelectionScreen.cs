@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 namespace Main.UI.Screens.CharacterSelection {
 	public class CharacterSelectionScreen : Screen {
-		[SerializeField] private float animationDuration = 0.2f;
 		[SerializeField] private CharactersConfig characters;
 		[SerializeField] private CharacterElement characterElementPrefab;
 		[SerializeField] private Transform selectedCharacterContainer;
@@ -55,7 +54,7 @@ namespace Main.UI.Screens.CharacterSelection {
 			backButtonAnimator.enabled = false;
 			
 			Tween backButtonShowAnimation = backButton.transform
-				.DOScale(1, animationDuration)
+				.DOScale(1, AnimationDuration)
 				.From(0)
 				.SetEase(Ease.OutBack)
 				.OnComplete(() => backButtonAnimator.enabled = true)

@@ -260,11 +260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03920b045d30eec4c8f05bfdc2283697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationDuration: 0.2
+  AnimationDuration: 0.2
   canvasGroup: {fileID: 5661670779929332683}
   containerTransform: {fileID: 4000057250285879666}
   <ScreenType>k__BackingField: 1
-  animationDuration: 0.2
   settingsButton: {fileID: 9112368553213890304}
   settingsButtonAnimator: {fileID: 5878890556483814382}
   playButton: {fileID: 4764368646051855303}

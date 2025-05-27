@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 namespace Main.UI.Screens.MainMenu {
 	public class MainMenuScreen : Screen {
-		[SerializeField] private float animationDuration = 0.2f;
 		[SerializeField] private Button settingsButton;
 		[SerializeField] private Animator settingsButtonAnimator;
 		[SerializeField] private Button playButton;
@@ -16,11 +15,11 @@ namespace Main.UI.Screens.MainMenu {
 			
 			DOTween
 				.Sequence()
-				.AppendInterval(animationDuration)
-				.Append(exitButton.transform.DOScale(1, animationDuration).From(0).SetEase(Ease.OutBack))
-				.Append(characterSelectionButton.transform.DOScale(1, animationDuration).From(0).SetEase(Ease.OutBack))
-				.Append(playButton.transform.DOScale(1, animationDuration).From(0).SetEase(Ease.OutBack))
-				.Append(settingsButton.transform.DOScale(1, animationDuration).From(0).SetEase(Ease.OutBack)
+				.AppendInterval(AnimationDuration)
+				.Append(exitButton.transform.DOScale(1, AnimationDuration).From(0).SetEase(Ease.OutBack))
+				.Append(characterSelectionButton.transform.DOScale(1, AnimationDuration).From(0).SetEase(Ease.OutBack))
+				.Append(playButton.transform.DOScale(1, AnimationDuration).From(0).SetEase(Ease.OutBack))
+				.Append(settingsButton.transform.DOScale(1, AnimationDuration).From(0).SetEase(Ease.OutBack)
 					.OnComplete(() => settingsButtonAnimator.enabled = true));
 		}
 		private void OnEnable() {

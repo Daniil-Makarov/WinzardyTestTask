@@ -93,11 +93,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1548de5137156684384e8fbb47f2c406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationDuration: 0.2
+  AnimationDuration: 0.2
   canvasGroup: {fileID: 6581882213787184766}
   containerTransform: {fileID: 6413178175368139450}
   <ScreenType>k__BackingField: 2
-  animationDuration: 0.2
   characters: {fileID: 11400000, guid: ada29213efc063a42adcaac5af298946, type: 2}
   characterElementPrefab: {fileID: 1911290689566818729, guid: 69c8b9afcff847e4295450cb4fa88be9, type: 3}
   selectedCharacterContainer: {fileID: 5138924679185006279}
