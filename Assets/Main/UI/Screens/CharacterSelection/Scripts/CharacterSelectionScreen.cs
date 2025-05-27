@@ -28,7 +28,7 @@ namespace Main.UI.Screens.CharacterSelection {
 		private void OnDisable() => backButton.onClick.RemoveListener(Back);
 		private void Back() => ScreenNavigator.CloseCurrentScreen();
 		public void Select(CharacterElement characterElement) {
-			if (selected.element == characterElement || switchModelTween != null && switchModelTween.IsActive()) return;
+			if (selected.element == characterElement || switchModelTween.IsActive()) return;
 
 			if (selected.model && selected.element) {
 				selected.element.PlayDeselectAnimation();

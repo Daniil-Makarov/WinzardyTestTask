@@ -65,9 +65,9 @@ namespace Main.UI.Screens.CharacterSelection {
 		}
 		private void SelectCharacter() => characterSelectionScreen.Select(this);
 		private void FinishActiveAnimations() {
-			if (showTween != null && showTween.IsActive()) showTween.Complete();
-			if (selectTween != null && selectTween.IsActive()) selectTween.Complete();
-			if (deselectTween != null && deselectTween.IsActive()) deselectTween.Complete();
+			if (showTween.IsActive()) showTween.Complete();
+			if (selectTween.IsActive() && selectTween.IsPlaying()) selectTween.Complete();
+			if (deselectTween.IsActive() && deselectTween.IsPlaying()) deselectTween.Complete();
 		}
 	}
 }
